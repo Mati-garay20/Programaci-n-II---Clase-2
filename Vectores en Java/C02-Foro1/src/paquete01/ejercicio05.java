@@ -21,6 +21,12 @@ public class ejercicio05 {
 		}
 		
 		//Modificar para que imprima los valores ordenados de menor a mayor
+		
+		int mul;
+		boolean var;
+		do {
+			var=false;
+			
 			for (int x=0; x<5-1; x++) {
 				if ( dim[x]>dim[x+1]) { 
 					
@@ -28,8 +34,10 @@ public class ejercicio05 {
 					mul=dim[x];
 					dim[x]=dim[x+1];
 					dim[x+1]=mul;
+					var=true;
 				}
 			}
+		}while(var);		
 		
 		//Imprime por pantalla
 		for (int v=0; v<5; v++) {
